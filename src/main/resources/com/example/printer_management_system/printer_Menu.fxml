@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="open_Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.printer_management_system.pms_classes.controllers.printer_MenuController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="69.0" prefHeight="55.0" prefWidth="600.0" text="Menu" textAlignment="CENTER">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Button id="add_Button" fx:id="add_Button" layoutX="329.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#onAddButtonClicked" prefWidth="236.0" text="Add Printers" />
+      <Button id="delete_Button" fx:id="delete_Button" layoutX="329.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#onDeleteButtonClicked" prefHeight="25.0" prefWidth="236.0" text="Delete Printers" />
+      <Button fx:id="update_Button" layoutX="37.0" layoutY="208.0" mnemonicParsing="false" onMouseClicked="#onUpdateButtonClicked" prefHeight="25.0" prefWidth="236.0" text="Update Printers" />
+      <Button fx:id="search_Button" layoutX="37.0" layoutY="264.0" mnemonicParsing="false" onMouseClicked="#onSearchButtonClicked" prefHeight="25.0" prefWidth="236.0" text="Search Printers" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutY="14.0" prefHeight="55.0" prefWidth="600.0" text="Printer Managment System" textAlignment="CENTER">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="329.0" layoutY="162.0" prefHeight="27.0" prefWidth="236.0" text="Administrative tasks" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="162.0" prefHeight="27.0" prefWidth="236.0" text="Regular tasks" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="475.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#onExitProgram" prefHeight="25.0" prefWidth="90.0" text="Exit Program" />
+   </children>
+</Pane>

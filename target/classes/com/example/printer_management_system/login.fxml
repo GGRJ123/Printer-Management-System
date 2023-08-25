@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="open_Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="248.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.printer_management_system.pms_classes.controllers.loginController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" prefHeight="69.0" prefWidth="204.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email_Input" layoutX="29.0" layoutY="102.0" prefHeight="25.0" prefWidth="221.0" />
+      <TextField fx:id="password_Input" layoutX="29.0" layoutY="162.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="29.0" layoutY="82.0" prefHeight="20.0" prefWidth="90.0" text="Email: ">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="29.0" layoutY="142.0" prefHeight="20.0" prefWidth="90.0" text="Password:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Button fx:id="signin_Button" layoutX="197.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#onSigninButtonClicked" text="Sign In" />
+      <Label fx:id="error_Message" layoutX="29.0" layoutY="192.0" prefHeight="17.0" prefWidth="221.0" />
+      <Button layoutX="133.0" layoutY="215.0" mnemonicParsing="false" onMouseClicked="#onCancelClicked" text="Cancel" />
+      <ImageView fx:id="imageBox" fitHeight="248.0" fitWidth="321.0" layoutX="280.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

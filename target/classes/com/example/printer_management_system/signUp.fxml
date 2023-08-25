@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="open_Pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.printer_management_system.pms_classes.controllers.signUpController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="20.0" prefHeight="55.0" prefWidth="496.0" text="Sign up" textAlignment="CENTER">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="user_Email" layoutX="39.0" layoutY="158.0" />
+      <TextField fx:id="user_Password" layoutX="39.0" layoutY="217.0" />
+      <Label layoutX="39.0" layoutY="132.0" text="Email: " />
+      <Label layoutX="39.0" layoutY="192.0" text="Password:" />
+      <Button fx:id="signUpButton" layoutX="506.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#onSignUpButtonClicked" text="Sign Up" />
+      <CheckBox fx:id="adminCheckbox" layoutX="272.0" layoutY="275.0" mnemonicParsing="false" onAction="#onCheckbox" text="Admin" />
+      <TextField fx:id="passphraseTB" disable="true" layoutX="39.0" layoutY="349.0" prefHeight="25.0" prefWidth="316.0" />
+      <Label layoutX="39.0" layoutY="88.0" prefHeight="25.0" prefWidth="425.0" text="Please sign up using your Delaware-Tech email address.">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="271.0" prefHeight="25.0" prefWidth="230.0" text="Need administrative privileges?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="324.0" prefHeight="25.0" prefWidth="316.0" text="Enter the correct passphrase.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="435.0" layoutY="349.0" mnemonicParsing="false" onMouseClicked="#onCancelButtonClicked" text="Cancel" />
+      <Label fx:id="messageLabel" layoutX="431.0" layoutY="293.0" prefHeight="40.0" prefWidth="165.0" />
+   </children>
+</Pane>
